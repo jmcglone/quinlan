@@ -28,3 +28,15 @@ ul.posts li { list-style: none; }
 .cv address, .cv p { font-size: 1.2em; }
 .cv .download { float: right; font-size: .8em; text-transform: uppercase; }
 
+/* needs more blink */
+/* http://stackoverflow.com/a/16012979 */
+.blink {
+  animation: blink 1s steps(5, start) infinite;
+  -webkit-animation: blink 1s steps(5, start) infinite;
+}
+@keyframes blink {
+  to { visibility: hidden; }
+}
+@-webkit-keyframes blink {
+  to { visibility: hidden; }
+}
